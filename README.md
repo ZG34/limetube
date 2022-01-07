@@ -16,9 +16,9 @@ limetube is a simple user interface for downloading with [yt-dlp](https://github
 It is written in Python 3, and I have only confirmed it runs on **windows**.
 
 ## Features
-* download **audio** or **video** with just a link and a single click.
-* keep track of downloads with automatic logging of downloaded videos (default log location is  Documents folder).
-* change color scheme of application.
+* Download **audio** or **video** with just a link and a single click.
+* Keep track of downloads with automatic logging of downloaded videos (default log location is  Documents folder).
+* Change color scheme of application.
 
 ## Install Instructions
 * Download pre-packaged exe folder [here](https://github.com/ZG34/limetube-public/files/7829885/limetube-portable-exe-v0.3.zip) or at the [releases page](https://github.com/ZG34/limetube-public/releases).
