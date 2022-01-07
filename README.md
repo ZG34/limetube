@@ -21,6 +21,6 @@ It is written in Python 3, and I have only confirmed it runs on **windows**.
 * Change color scheme of application.
 
 ## Install Instructions
-* Download pre-packaged exe folder [here](https://github.com/ZG34/limetube-public/files/7829885/limetube-portable-exe-v0.3.zip) or at the [releases page](https://github.com/ZG34/limetube-public/releases).
+* Download pre-packaged exe folder [here]https://github.com/ZG34/limetube-public/files/7830086/limetube-portable-exe-v0.3.zip) or at the [releases page](https://github.com/ZG34/limetube-public/releases).
 * Source Code on [GitHub](https://github.com/ZG34/limetube-public)
 * If packaging exe yourself with pyinstaller, make sure to drag "assets" into the final folder containing the .exe file.
