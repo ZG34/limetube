@@ -1,0 +1,40 @@
+** Prior to 1/7 is imported from limetube private repo.
+
+1/7/2022 11:20am EST
+* imported and updated changelog
+* updated README install instructions for pyinstaller
+
+
+1/7/2022 10:30am EST
+* updated "view full log" button to open proper file at proper path after prior logging change.
+* renamed gui.py to main.py
+
+
+1/7/2022 12:00am EST
+* Set video download logger to save at /Documents folder on Windows systems.
+* Updated README with install instructions
+
+
+1/6/2022 7:45pm EST
+* added two additional color selection options (day mode / night mode)
+
+* renamed main window
+* added photos to README
+
+
+1/6/2022 5:05pm EST
+* implemented audio download functionality
+* implemented logging display functionality
+* implemented color selection menu, with limetube light / limetube dark color scheme options
+* readme added
+
+* first commit to repository
+* renamed main file from gui2.py to gui.py
+* renamed asset folder from assets2 to assets
+* added day/night mode graphics to asset folder
+
+
+1/5
+* added interface displays for audio only download, and viewing log information.
+* functional GUI with title box, black background, URL entry, and download video button
+* project start
