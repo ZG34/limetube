@@ -1,4 +1,4 @@
-** Prior to 1/7 is imported from limetube private repo.
+** Up to 1/7 11:30am is imported from limetube private repo.
 
 1/7/2022 11:20am EST
 * imported and updated changelog
