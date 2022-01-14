@@ -16,8 +16,7 @@ from tkinter import (
     INSERT,
     Menu,
     ttk,
-    StringVar,
-    Spinbox,
+    Label
 )
 
 # YT-DLP to download video on click
@@ -29,7 +28,6 @@ from os import chdir, path, startfile
 from datetime import datetime
 
 dt = datetime.now()
-
 
 # <editor-fold desc="Asset Acquisition">
 
@@ -100,8 +98,18 @@ canvas.create_text(
     254.0, 296.0, anchor="nw", text="URL:", fill="#000000", font=("Freehand", 30 * -1)
 )
 
-
 # </editor-fold>
+
+
+# DL speed interface
+speed = Entry(window)
+speed.place(x=1100, y=340)
+speed.config(width=10)
+speed_label = Label(text="Limit DL Speed")
+speed_label.place(x=1100, y=320)
+speed_scale = Label(text="MB/s")
+speed_scale.place(x=1150, y=340)
+num = int()
 
 
 # Sets directory, DLs vid, and runs logger functions
@@ -111,8 +119,22 @@ def click():
     save_loc = filedialog.askdirectory()
     bar_start()
     url = url_entry.get()
-    print(url_entry.get())
-    ydl_opts = {}
+    # try/except block checks for download speed
+    try:
+        global num
+        spd = float(speed.get())
+        convert = spd * 1e+6
+        print(convert)
+        num = int(convert)
+        print("spd", num)
+    except ValueError:
+        pass
+    if num > 0:
+        ydl_opts = {
+            'ratelimit': num
+        }
+    else:
+        ydl_opts = {}
     chdir(save_loc)
     with YoutubeDL(ydl_opts) as ydl:
         ydl.download(["ytsearch:" + url])
@@ -174,6 +196,8 @@ dl_audio = Button(
     relief="raised",
 )
 dl_audio.place(x=917.0, y=500.0, width=309.0, height=52.0)
+
+
 # </editor-fold>
 
 
