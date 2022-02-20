@@ -1,6 +1,3 @@
-# personal reminder: learn and use some sort of design pattern in next project.
-
-
 from pathlib import Path
 
 # Explicit imports to satisfy Flake8
